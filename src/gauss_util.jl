@@ -1,4 +1,6 @@
 import Distributions.MvNormalStats, Distributions.lpgamma, Distributions.suffstats, Distributions.mean
+using ConjugatePriors
+import ConjugatePriors.NormalWishart
 
 function suffstats_cool(D::Type{MvNormal}, x::Matrix{Float64}, w::Array{Float64})
     d = size(x, 1)

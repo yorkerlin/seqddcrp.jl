@@ -2,7 +2,8 @@ using PDMats
 using Distributions
 
 import Distributions.logpdf, Distributions.pdf
-
+using ConjugatePriors
+import ConjugatePriors.NormalWishart
 import PDMats.dim
 
 immutable MultivariateStudent
